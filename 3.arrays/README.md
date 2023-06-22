@@ -45,13 +45,16 @@ const people = [
   {firstName: "Илья", secondName: "Казаков", age: 35, gender: "мужской"},
   {firstName: "Евгений", secondName: "Кузьмин", age: 19, gender: "мужской"},
 ]
-console.log(getUsersNamesInAgeRange(people, "мужской")); // 32
-console.log(getUsersNamesInAgeRange(people, "женский")); // 27.4
-console.log(getUsersNamesInAgeRange([], "женский")); // 0
-console.log(getUsersNamesInAgeRange(people, "инопланетянин")); // 0
+console.log(getUsersNamesInAgeRange(people, "мужской")) // 32
+console.log(getUsersNamesInAgeRange(people, "женский")) // 27.4
+console.log(getUsersNamesInAgeRange([], "женский")) // 0
+console.log(getUsersNamesInAgeRange(people, "инопланетянин")) // 0
 ```
 
+##123123
+
 ## Результат при правильном решении задания
+
 ![графическое представление](../Jasmine/results/sucessed_tasks_3.png)
 
 ## Требования к выполнению домашней работы
@@ -62,6 +65,7 @@ console.log(getUsersNamesInAgeRange(people, "инопланетянин")); // 0
 4.  Решение опубликовано в GitHub Pages.
 
 ## Решение задач
+
 1. Откройте файл `task.js` в вашем редакторе кода и выполните задание. <br>
 2. Проверьте соблюдение [кодстайла](https://github.com/netology-code/codestyle/tree/master/js#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-javascript-%D0%BA%D0%BE%D0%B4%D0%B0). Форматируйте ваш код через форматтер https://codebeautify.org/jsviewer.
 3. Вы можете написать функцию `testCase` для проверки вашей работы. <br>

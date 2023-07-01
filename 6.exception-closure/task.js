@@ -51,17 +51,12 @@ function getTriangle(side1, side2, side3) {
     return new Triangle(side1, side2, side3)
   } catch {
     return {
-      area: function () {
+      get area() {
         return "Ошибка! Треугольник не существует"
       },
-      perimeter: function () {
+      get perimeter() {
         return "Ошибка! Треугольник не существует"
       },
     }
   }
 }
-
-// let tr1 = new Triangle(1, 1, 2)
-// console.log(tr1.perimeter)
-
-console.log(getTriangle(0, 3, 0))

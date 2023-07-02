@@ -27,8 +27,16 @@ class AlarmClock {
   }
 
   getCurrentFormattedTime() {
-    let currentTime = new Date()
-    return `${currentTime.getHours()}:${currentTime.getMinutes()}`
+    let currentTime = new Date(2022, 3, 1, 3, 1)
+    let hours =
+      currentTime.getHours() < 10
+        ? `0${currentTime.getHours()}`
+        : currentTime.getHours()
+    let minutes =
+      currentTime.getMinutes() < 10
+        ? `0${currentTime.getMinutes()}`
+        : currentTime.getMinutes()
+    return `${hours}:${minutes}`
   }
 
   start() {

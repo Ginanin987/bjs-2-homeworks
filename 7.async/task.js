@@ -9,15 +9,15 @@ class AlarmClock {
       throw new Error("Отсутствуют обязательные аргументы")
     }
 
-    if (this.alarmCollection.time === time) {
+    if (this.alarmCollection.some((alarm) => alarm.time === time)) {
       console.warn("Уже присутствует звонок на это же время")
-    } else {
-      this.alarmCollection.push({
-        callback,
-        time,
-        canCall,
-      })
     }
+
+    this.alarmCollection.push({
+      callback,
+      time,
+      canCall,
+    })
   }
 
   removeClock(time) {
@@ -27,7 +27,7 @@ class AlarmClock {
   }
 
   getCurrentFormattedTime() {
-    let currentTime = new Date(2022, 3, 1, 3, 1)
+    let currentTime = new Date()
     let hours =
       currentTime.getHours() < 10
         ? `0${currentTime.getHours()}`
